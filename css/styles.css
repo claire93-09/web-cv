@@ -1,0 +1,233 @@
+body{
+    font-family: 'Permanent Marker', cursive;
+}
+nav{
+    height:10vh;
+}
+.navbar-brand{
+    font-size: 2em;
+}
+.nav-link{
+    color:whitesmoke !important;
+}
+
+header section{
+    height:90vh;
+    background-image: linear-gradient(to right top, #ff7948, #ff3a5c, #ff0086, #e200c0, #7900ff);
+}
+h1{
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 4vh;
+
+}
+.presentation{
+    text-align: center;
+}
+header a {
+    color: whitesmoke;
+    text-decoration: none;
+    margin-left: 20px;
+}
+header a span{
+    color: whitesmoke;
+}
+header img{
+    width: 200px;
+}
+header p{
+    margin-bottom: 0;
+    padding: 20px;
+    font-family: 'Roboto Mono', monospace;
+    color: whitesmoke;
+}
+/*PDF*/
+.pdf a{
+    margin-left:0;
+}
+.pdf{
+    text-align: center;
+    margin-top: 7vh;
+}
+/* MAIN */
+main{
+    font-family: 'Roboto Mono', monospace;
+}
+h2{
+    text-align:center
+}
+
+main h2::before{
+    content:"/* "
+}
+
+main h2::after{
+    content:" */"
+}
+
+#formations, #experiences, #competences{
+    text-align:center;
+}
+
+#logos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.logo{
+    margin:10px;
+    height:50px;
+    width:50px;
+    align-self: center;
+    justify-self: center;
+}
+
+main h1{
+    font-family: 'Permanent Marker', cursive;
+}
+main h1::before{
+    content:"<!-- ";
+}
+
+main h1::after{
+    content:" -->";
+}
+
+#formations h2{
+    background-color: #ff0086;
+}
+
+#experiences h2{
+    background-color: #ff7948;
+}
+
+span{
+    font-family: 'Permanent Marker', cursive;
+}
+.mission {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    padding-left:0 !important;
+}
+
+.mission li{
+    list-style: none;
+    background-color: #7900ff;
+    border: solid 1px #7900ff;
+    border-radius: 10px;
+    margin: 15px;
+    text-align: center;
+    color: whitesmoke;
+}
+#coordonnees{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom:3vh;
+}
+
+#contact h1::before{
+    content:"<!-- ";
+
+}
+#contact h1::after{
+    content:" -->";
+
+}
+
+/*main*/
+footer{
+  
+    color:whitesmoke;
+}
+/*contactez-moi*/
+
+form{
+    display: flex;
+    justify-content: center;
+}
+
+.form-group{
+    width: 80%;
+}
+
+input, textarea{
+    margin-bottom: 1rem;
+    background: none !important;
+    border: 0 !important;
+    resize:none;
+    border-bottom: solid 3px #ff1a73 !important;
+}
+
+.btn{
+    color:whitesmoke;
+    background-color:  #ff1a73;
+}
+
+.fab{
+    color: whitesmoke;
+}
+
+@media only screen and (min-device-width: 768px){
+
+    .presentation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header p{
+        width:60%;
+    }
+
+    .title, .presentation, .pdf{
+        padding-top: 8vh;
+    }
+    .form-group{
+        width: 40%;
+    }
+
+    #container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin:2rem;
+        gap:2rem;
+    }
+    
+    #experiences , #formations{
+        display: grid;
+        grid-template-rows: 1fr 3fr 3fr;
+    }
+
+    #container h2{
+        border-radius:10px
+    }
+
+    #logos{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    
+    .logo{
+        width: 80px;
+        height: 80px;
+        transition: transform .2s;
+    }
+    .logo:hover{
+        transform: scale(1.5);
+    }
+
+    #coordonnees{
+        display:flex;
+        justify-content: space-around;
+        text-align: center;
+        flex-basis:auto;
+        margin-top:5vh;
+    }
+
+    #coordonnees div{
+        flex: 1 1 0;
+    }
+
+    
+}
